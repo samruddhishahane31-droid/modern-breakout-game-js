@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Breakout Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+  <div class="hud">
+    <span>Score: <span id="score">0</span></span>
+    <span>Lives: <span id="lives">3</span></span>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="gameOverScreen" class="overlay hidden">
+    <h2>Game Over</h2>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
